@@ -32,13 +32,13 @@ class Circle implements Shape{
 
 	Circle(double radius){
 		this.radius = radius;
-		this.area = 2*pi*radius;
+		this.area = pi*(radius*radius);
 
 	}
 	Circle(){}
 
 	public double calculateArea(){
-		return 2*pi*radius;
+		return pi*(radius*radius);
 	}
 	public void Display(){
 		int x;
