@@ -66,7 +66,7 @@ class Triangle implements Shape{
 
 }
 
-public class Assignment6{
+public class Assignment3{
 
      public static void main(String []args){
 
