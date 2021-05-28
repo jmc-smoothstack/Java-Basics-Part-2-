@@ -1,25 +1,30 @@
-class Rectangle{
+interface Shape{
+	public double calculateArea();
+	public void Display();
+}
+
+class Rectangle implements Shape{
 
 	double area, length, height;
 
-	Rectangle(double length, double height){
+	Rectangle(double length, double height){  
 		this.length = length;
 		this.height = height;
 		this.area = length*height;
 
 	}
-	Rectangle(){}
+	Rectangle(){} //default constuctor 
 
 	public double calculateArea(){
 		return length*height;
 	}
-	public static void Display(){
-
+	public void Display(){
+		int x;
 	}
 
 
 }
-class Circle{
+class Circle implements Shape{
 
 	double area, radius;
 
@@ -35,12 +40,12 @@ class Circle{
 	public double calculateArea(){
 		return 2*pi*radius;
 	}
-	public static void Display(){
-
+	public void Display(){
+		int x;
 	}
 
 }
-class Triangle{
+class Triangle implements Shape{
 
 	double area, length, height;
 
@@ -52,11 +57,11 @@ class Triangle{
 	Triangle(){}
 
 
-	public  double calculateArea(){
+	public double calculateArea(){
 		return length*height/2;
 	}
-	public static void Display(){
-
+	public void Display(){
+		int x;
 	}
 
 }
